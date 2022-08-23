@@ -1,2 +1,5 @@
 rootProject.name = 'RouteSuggester'
+include 'RouteSuggesterService'
+include 'RouteSuggesterJobs'
+include 'RouteSuggesterData'
 
