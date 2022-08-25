@@ -3,6 +3,7 @@ package service.repo;
 import java.util.Optional;
 
 public class RouteInfo {
+    private final int id;
     private final String routeName;
     private final String mountainName;
     private final boolean isStandardRoute;
@@ -21,6 +22,7 @@ public class RouteInfo {
     private final String trailheadUrl;
 
     public RouteInfo(
+            int id,
             String routeName,
             String mountainName,
             boolean isStandardRoute,
@@ -38,6 +40,7 @@ public class RouteInfo {
             String routeUrl,
             String trailheadUrl
     ) {
+        this.id = id;
         this.routeName = routeName;
         this.mountainName = mountainName;
         this.isStandardRoute = isStandardRoute;
@@ -54,6 +57,10 @@ public class RouteInfo {
         this.roadDifficulty = roadDifficulty;
         this.routeUrl = routeUrl;
         this.trailheadUrl = trailheadUrl;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getRouteName() {
