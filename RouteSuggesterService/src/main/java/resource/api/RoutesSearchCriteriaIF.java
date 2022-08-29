@@ -4,6 +4,9 @@ import org.immutables.value.Value;
 import java.util.Optional;
 
 @Value.Immutable
+@Value.Style(
+        typeAbstract = {"*IF"}
+)
 public interface RoutesSearchCriteriaIF {
     Optional<String> getRouteName();
     Optional<String> getMountainName();
@@ -19,6 +22,4 @@ public interface RoutesSearchCriteriaIF {
     Optional<String> getRouteFinding();
     Optional<String> getCommitment();
     Optional<Integer> getRoadDifficulty();
-
-
 }
