@@ -18,7 +18,7 @@ public interface RoutesSearchCriteriaIF {
     Optional<Integer> getGain();
     Optional<Integer> getLength();
     Optional<String> getExposure();
-    Optional<String> getRockfallExposure();
+    Optional<String> getRockfallPotential();
     Optional<String> getRouteFinding();
     Optional<String> getCommitment();
     Optional<Integer> getRoadDifficulty();
