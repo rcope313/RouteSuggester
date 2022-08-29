@@ -27,8 +27,9 @@ public class RouteInfoResource {
 
     @POST
     @UnitOfWork
+    @Path("/suggest_by_weather")
     public void getSuggestedRoutes(String body) {
-        
+
     }
 
     public RouteInfoService getRouteInfoService() {
