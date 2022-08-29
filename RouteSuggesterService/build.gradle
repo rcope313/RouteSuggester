@@ -17,6 +17,8 @@ dependencies {
     implementation("io.dropwizard:dropwizard-client:2.1.1")
     implementation("io.dropwizard:dropwizard-hibernate:2.1.1")
 
+    compileOnly("org.immutables:value:2.9.1")
+
     implementation project(':RouteSuggesterData')
 }
 

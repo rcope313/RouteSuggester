@@ -1,8 +1,8 @@
 package resource.resources;
 
 import io.dropwizard.hibernate.UnitOfWork;
-import resource.api.RoutesSearchCriteria;
-import resource.api.RoutesSearchResults;
+import resource.api.RoutesSearchCriteriaIF;
+import resource.api.RoutesSearchResultsIF;
 import service.services.RouteInfoService;
 
 import javax.ws.rs.Consumes;
@@ -23,14 +23,14 @@ public class RouteInfoResource {
 
     @POST
     @UnitOfWork
-    public RoutesSearchResults getRoutes(RoutesSearchCriteria body) {
+    public RoutesSearchResultsIF getRoutes(RoutesSearchCriteriaIF body) {
         return null;
     }
 
     @POST
     @UnitOfWork
     @Path("/suggest_by_weather")
-    public RoutesSearchResults getSuggestedRoutes(RoutesSearchCriteria body) {
+    public RoutesSearchResultsIF getSuggestedRoutes(RoutesSearchCriteriaIF body) {
         return null;
     }
 
