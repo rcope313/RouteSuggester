@@ -4,5 +4,6 @@ out/
 .DS_Store
 *.log
 *.class
-target/
+build/
+.gradle
 *.properties
