@@ -1,4 +1,6 @@
 package resource;
 
-public class RouteSuggesterConfiguration {
+import io.dropwizard.Configuration;
+
+public class RouteSuggesterConfiguration extends Configuration {
 }
