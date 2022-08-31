@@ -16,7 +16,7 @@ public class RouteInfoRepository {
         return trailheadDao;
     }
 
-    public FourteenerRouteDao getFourteenerDao() {
+    public FourteenerRouteDao getFourteenerRouteDao() {
         return fourteenerRouteDao;
     }
 }
