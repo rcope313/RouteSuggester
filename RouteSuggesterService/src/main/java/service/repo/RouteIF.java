@@ -3,6 +3,9 @@ package service.repo;
 import org.immutables.value.Value;
 
 @Value.Immutable
+@Value.Style(
+        typeAbstract = {"*IF"}
+)
 public interface RouteIF {
     String getRouteName();
     String getMountainName();
