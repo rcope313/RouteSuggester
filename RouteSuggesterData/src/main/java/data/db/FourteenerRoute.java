@@ -5,5 +5,5 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "fourteener_routes")
-public class Fourteener {
+public class FourteenerRoute {
 }

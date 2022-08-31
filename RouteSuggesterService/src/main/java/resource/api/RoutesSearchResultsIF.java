@@ -1,7 +1,7 @@
 package resource.api;
 
 import org.immutables.value.Value;
-import service.repo.RouteInfo;
+import service.repo.ImmutableRoute;
 
 import java.util.List;
 
@@ -10,5 +10,5 @@ import java.util.List;
         typeAbstract = {"*IF"}
 )
 public interface RoutesSearchResultsIF {
-    List<RouteInfo> getRoutes();
+    List<ImmutableRoute> getRoutes();
 }

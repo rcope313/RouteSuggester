@@ -1,17 +1,17 @@
 package service.services;
 
 import resource.api.ImmutableRoutesSearchCriteria;
-import service.repo.RouteInfo;
+import service.repo.ImmutableRoute;
 
 import java.util.List;
 
 public class RouteInfoService {
 
-    public List<RouteInfo> getRoutesBySearchCriteria(ImmutableRoutesSearchCriteria searchCriteria) {
+    public List<ImmutableRoute> getRoutesBySearchCriteria(ImmutableRoutesSearchCriteria searchCriteria) {
        return null;
     }
 
-    public List<RouteInfo> getRoutesBySearchCriteriaAndWeather(ImmutableRoutesSearchCriteria searchCriteria) {
+    public List<ImmutableRoute> getRoutesBySearchCriteriaAndWeather(ImmutableRoutesSearchCriteria searchCriteria) {
         return null;
     }
 }

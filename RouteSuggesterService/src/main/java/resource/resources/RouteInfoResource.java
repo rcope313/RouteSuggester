@@ -3,7 +3,7 @@ package resource.resources;
 import io.dropwizard.hibernate.UnitOfWork;
 import resource.api.ImmutableRoutesSearchCriteria;
 import resource.api.ImmutableRoutesSearchResults;
-import service.repo.RouteInfo;
+import service.repo.ImmutableRoute;
 import service.services.RouteInfoService;
 
 import javax.ws.rs.Consumes;
@@ -26,7 +26,7 @@ public class RouteInfoResource {
     @POST
     @UnitOfWork
     public ImmutableRoutesSearchResults getRoutes(ImmutableRoutesSearchCriteria body) {
-        List<RouteInfo> routes = routeInfoService.getRoutesBySearchCriteria(body);
+        List<ImmutableRoute> routes = routeInfoService.getRoutesBySearchCriteria(body);
         return ImmutableRoutesSearchResults
                 .builder()
                 .addAllRoutes(routes)
@@ -37,7 +37,7 @@ public class RouteInfoResource {
     @UnitOfWork
     @Path("/suggest_by_weather")
     public ImmutableRoutesSearchResults getSuggestedRoutes(ImmutableRoutesSearchCriteria body) {
-        List<RouteInfo> routes = routeInfoService.getRoutesBySearchCriteriaAndWeather(body);
+        List<ImmutableRoute> routes = routeInfoService.getRoutesBySearchCriteriaAndWeather(body);
         return ImmutableRoutesSearchResults
                 .builder()
                 .addAllRoutes(routes)

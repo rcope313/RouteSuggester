@@ -4,6 +4,6 @@ out/
 .DS_Store
 *.log
 *.class
-*.properties
 build/
 .gradle
+*.properties
