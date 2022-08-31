@@ -4,6 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "trailheads")
-public class Trailhead {
+@Table(name = "fourteener_routes")
+public class FourteenerRoute {
 }

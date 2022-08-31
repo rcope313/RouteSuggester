@@ -3,9 +3,9 @@ package data.db;
 import io.dropwizard.hibernate.AbstractDAO;
 import org.hibernate.SessionFactory;
 
-public class TrailheadDao extends AbstractDAO<Trailhead> {
+public class FourteenerRouteDao extends AbstractDAO<FourteenerRoute> {
 
-    public TrailheadDao(SessionFactory sessionFactory) {
+    public FourteenerRouteDao(SessionFactory sessionFactory) {
         super(sessionFactory);
     }
 }
