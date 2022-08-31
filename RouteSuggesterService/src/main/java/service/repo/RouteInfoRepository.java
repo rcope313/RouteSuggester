@@ -1,22 +1,22 @@
 package service.repo;
 
-import data.db.FourteenerDao;
+import data.db.FourteenerRouteDao;
 import data.db.TrailheadDao;
 
 public class RouteInfoRepository {
     private final TrailheadDao trailheadDao;
-    private final FourteenerDao fourteenerDao;
+    private final FourteenerRouteDao fourteenerRouteDao;
 
-    public RouteInfoRepository(TrailheadDao trailheadDao, FourteenerDao fourteenerDao) {
+    public RouteInfoRepository(TrailheadDao trailheadDao, FourteenerRouteDao fourteenerRouteDao) {
         this.trailheadDao = trailheadDao;
-        this.fourteenerDao = fourteenerDao;
+        this.fourteenerRouteDao = fourteenerRouteDao;
     }
 
     public TrailheadDao getTrailheadDao() {
         return trailheadDao;
     }
 
-    public FourteenerDao getFourteenerDao() {
-        return fourteenerDao;
+    public FourteenerRouteDao getFourteenerDao() {
+        return fourteenerRouteDao;
     }
 }
